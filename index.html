@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning/Kamini patil</title>
+
+</head>
+
+<body>
+    <h1>Machine Learning</h1>
+    <hr size="3">
+
+    <table>
+        <tr>
+            <td>
+                <p>From Wikipedia, the free encyclopedia <i>From Kamini Patil</i></p>
+                <p><i>For the journal, see <a href="https://en.wikipedia.org/wiki/Machine_Learning_(journal)" target="_blank"></i>
+                    Machine Learning
+                    <i>(journal).</i></a>
+                </p>
+                <p><i>"Statistical learning" redirects here. For statistical learning in linguistics, see <a
+                            href="https://en.wikipedia.org/wiki/Statistical_learning_in_language_acquisition" target="_blank">
+                            statistical learning
+                            in language acquisition.</i></a></p>
+                <p><strong>Machine learning (ML)</strong> is a field of inquiry devoted to understanding and building
+                    methods that
+                    "learn" that is, methods that leverage data to improve performance on some set of tasks.
+                    It is seen as a part of
+                    <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" target="_blank"> artificial intelligence.</a>
+                </p>
+                <p>Machine learning <a href="https://en.wikipedia.org/wiki/Algorithm" target="_blank"> algorithms</a> build a model
+                    based on sample
+                    data, known as <a
+                        href="https://en.wikipedia.org/wiki/Training,_validation,_and_test_data_sets#training_se" target="_blank">training
+                        data </a>
+                    ,
+                    in order to make predictions or decisions without being explicitly programmed to do so.
+                    
+                    Machine learning algorithms are used in a wide variety of
+                    applications, such as in medicine, email filtering, speech recognition, agriculture, and computer
+                    vision,
+                    where it is difficult or unfeasible to develop conventional algorithms to perform the needed tasks.
+                    
+                </p>
+                <p>A subset of machine learning is closely related to computational statistics, which focuses on making
+                    predictions
+                    using computers, but not all machine learning is statistical learning. The study of mathematical
+                    optimization
+                    delivers methods, theory and application domains to the field of machine learning. <a
+                        href="https://en.wikipedia.org/wiki/Data_mining" target="_blank"> Data mining </a>is a related
+                    field of study, focusing on exploratory data analysis through unsupervised learning.
+                    
+                </p>
+                <p>Some implementations of machine learning use data and <a
+                        href="https://en.wikipedia.org/wiki/Neural_network" target="_blank">neural networks</a> in a way that mimics the
+                    working of
+                    a
+                    biological brain. 
+
+                <p>In its application across business problems, machine learning is also referred to as predictive
+                    analytics.</p>
+            </td>
+            <td>
+                <img src="images/ml.avif" alt="Machine Learning" align="Central" width="600px" width="800px">
+            </td>
+            <td>
+                <ul>
+
+                    <li><a href="#History and relationships to other fields">
+                            <h3><i>History</i></h3>
+                        </a></li>
+
+                    <li><a href="#How machine learning works">
+                            <h3><i>Working</i></h3>
+                        </a></li>
+
+                    <li><a href="#Machine learning methods">
+                            <h3><i>Methods</i></h3>
+                        </a></li>
+
+                    <li><a href="#Common machine learning algorithms">
+                            <h3><i>Algorithms</i></h3>
+                        </a></li>
+
+                    <li><a href="#Applications">
+                            <h3><i>Applications</i></h3>
+                        </a></li>
+
+                    <li><a href="#New concept in Machine Learning">
+                            <h3><i>New concept</i></h3>
+                        </a></li>
+
+                    <li><a href="#Ethics">
+                            <h3><i>Ethics</i></h3>
+                        </a></li>
+
+                    <li><a href="#Limitations">
+                            <h3><i>Limitations</i></h3>
+                        </a></li>
+
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <hr size="3">
+
+    <section id="History and relationships to other fields">
+        <img src="images/ai_ml.png" alt="Relationship between AI , ML and DL" align="right" height="16%" width="16%">
+        <h2>History and relationships to other fields</h2>
+        <p>The term machine learning was coined in 1959 by Arthur Samuel, an IBM employee and pioneer in the field of
+            computer gaming and artificial intelligence. The synonym self-teaching computers was also used in this time
+            period.</p>
+        <p>By the early 1960s an experimental "learning machine" with punched tape memory, called CyberTron, had been
+            developed by Raytheon Company to analyze sonar signals, electrocardiograms, and speech patterns using
+            rudimentary reinforcement learning. It was repetitively "trained" by a human operator/teacher to recognize
+            patterns and equipped with a "goof" button to cause it to re-evaluate incorrect decisions. A representative
+            book on research into machine learning during the 1960s was Nilsson's book on Learning Machines, dealing
+            mostly
+            with machine learning for pattern classification. Interest related to pattern recognition continued into the
+            1970s, as described by Duda and Hart in 1973.  In 1981 a report was given on using teaching
+            strategies so
+            that a neural network learns to recognize 40 characters (26 letters, 10 digits, and 4 special symbols) from
+            a
+            computer terminal.</p>
+        <p>Modern-day machine learning has two objectives, one is to classify data based on models which have been
+            developed, the other purpose is to make predictions for future outcomes based on these models. A
+            hypothetical
+            algorithm specific to classifying data may use computer vision of moles coupled with supervised learning in
+            order to train it to classify the cancerous moles. A machine learning algorithm for stock trading may inform
+            the
+            trader of future potential predictions.</p>
+        <hr size="3">
+    </section>
+
+    <section id="How machine learning works">
+        <h2>How machine learning works</h2>
+        <p> <a href="https://ischoolonline.berkeley.edu/blog/what-is-machine-learning/" target="_blank">UC Berkeley</a> (link resides
+            outside IBM) breaks out the learning system of a machine learning algorithm into three main parts</p>
+        <p>
+        <ol>
+            <li> <b> A Decision Process:</b> In general, machine learning algorithms are used to make a prediction or
+                classification.
+                Based on some input data, which can be labeled or unlabeled, your algorithm will produce an estimate
+                about a
+                pattern in the data.</li>
+            <br>
+            <li> <b>An Error Function:</b> An error function evaluates the prediction of the model. If there are known
+                examples, an
+                error function can make a comparison to assess the accuracy of the model.</li>
+            <br>
+            <li> <b>A Model Optimization Process:</b> If the model can fit better to the data points in the training
+                set,
+                then
+                weights are adjusted to reduce the discrepancy between the known example and the model estimate. The
+                algorithm will repeat this “evaluate and optimize” process, updating weights autonomously until a
+                threshold
+                of accuracy has been met. </li>
+
+        </ol>
+        </p>
+        <hr size="3">
+    </section>
+
+    <section id="Machine learning methods">
+        <h2>Machine learning methods</h2>
+        <p>Machine learning models fall into three primary categories.</p>
+        <ol>
+            <li>
+                <h3>Supervised machine learning </h3>
+                <p> <a href="https://www.ibm.com/in-en/topics/supervised-learninga" target="_blank">Supervised learning </a> , also
+                    known as
+                    supervised machine learning, is defined by its use of labeled datasets to
+                    train algorithms to classify data or predict outcomes accurately. As input data is fed into the
+                    model, the
+                    model
+                    adjusts its weights until it has been fitted appropriately. This occurs as part of the cross
+                    validation
+                    process
+                    to ensure that the model avoids overfitting or underfitting. Supervised learning helps organizations
+                    solve a
+                    variety of real-world problems at scale, such as classifying spam in a separate folder from your
+                    inbox. Some
+                    methods used in supervised learning include neural networks, naïve bayes, linear regression,
+                    logistic
+                    regression, random forest, and support vector machine (SVM).
+
+                </p>
+            </li>
+
+            <a href="supervised.html" target="_blank"> <em> Click me for supervised learning diagram</em></a>
+            <li>
+                <h3>Unsupervised machine learning</h3>
+                <p> <a href="https://www.ibm.com/in-en/topics/unsupervised-learning" target="_blank"> Unsupervised learning </a>, also
+                    known as
+                    unsupervised machine learning, uses machine learning algorithms to analyze
+                    and cluster unlabeled datasets. These algorithms discover hidden patterns or data groupings without
+                    the need
+                    for
+                    human intervention. This method's ability to discover similarities and differences in information
+                    make it
+                    ideal
+                    for exploratory data analysis, cross-selling strategies, customer segmentation, and image and
+                    pattern
+                    recognition. It's also used to reduce the number of features in a model through the process of
+                    dimensionality
+                    reduction. Principal component analysis (PCA) and singular value decomposition (SVD) are two common
+                    approaches
+                    for this. Other algorithms used in unsupervised learning include neural networks, k-means
+                    clustering, and
+                    probabilistic clustering methods.
+
+                </p>
+            </li>
+
+            <a href="unspervised.html" target="_blank"> <em> Click me for unsupervised learning diagram</em></a>
+            <li>
+                <h3>Reinforcement machine learning</h3>
+                <p> <a href="https://en.wikipedia.org/wiki/Reinforcement_learning" target="_blank"> Reinforcement machine learning</a>
+                    is a
+                    machine
+                    learning model that is similar to supervised learning, but the
+                    algorithm isn't trained using sample data. This model learns as it goes by using trial and error. A
+                    sequence
+                    of
+                    successful outcomes will be reinforced to develop the best recommendation or policy for a given
+                    problem.
+
+                    The IBM Watson® system that won the Jeopardy! challenge in 2011 is a good example. The system used
+                    reinforcement
+                    learning to learn when to attempt an answer (or question, as it were), which square to select on the
+                    board,
+                    and
+                    how much to wager—especially on daily doubles.</p>
+            </li>
+            <a href="reinforcement.html" target="_blank"> <em> Click me for reinforcement learning diagram</em></a>
+
+        </ol>
+        <hr size="3">
+    </section>
+
+    <section id="Common machine learning algorithms">
+        <h2>Common machine learning algorithms</h2>
+        <p>A number of machine learning algorithms are commonly used. These include:</p>
+        <p>
+        <ul>
+            <li><b> Neural networks:</b> Neural networks simulate the way the human brain works, with a huge number of
+                linked
+                processing nodes. Neural networks are good at recognizing patterns and play an important role in
+                applications including natural language translation, image recognition, speech recognition, and image
+                creation.</li>
+            <br>
+            <li> <b>Linear regression:</b>This algorithm is used to predict numerical values, based on a linear
+                relationship
+                between different values. For example, the technique could be used to predict house prices based on
+                historical data for the area.</li>
+            <br>
+            <li><b> Logistic regression:</b> This supervised learning algorithm makes predictions for categorical
+                response
+                variables, such as“yes/no” answers to questions. It can be used for applications such as classifying
+                spam
+                and quality control on a production line.</li>
+            <br>
+            <li><b>Clustering:</b> Using unsupervised learning, clustering algorithms can identify patterns in data so
+                that
+                it can
+                be grouped. Computers can help data scientists by identifying differences between data items that humans
+                have overlooked.</li>
+            <br>
+            <li><b>Decision trees: </b>Decision trees can be used for both predicting numerical values (regression) and
+                classifying
+                data into categories. Decision trees use a branching sequence of linked decisions that can be
+                represented
+                with a tree diagram. One of the advantages of decision trees is that they are easy to validate and
+                audit,
+                unlike the black box of the neural network.</li>
+            <br>
+            <li><b>Random forests:</b> In a random forest, the machine learning algorithm predicts a value or category
+                by
+                combining
+                the results from a number of decision trees.</li>
+        </ul>
+        </p>
+        <hr size="3">
+    </section>
+
+    <section id="Applications">
+        <img src="images/Appli_ml.png" alt="Applications of ML" align="left" height="300px" width="400px">
+        <h2>Applications</h2>
+        <p>There are many applications for machine learning, including:</p>
+        <table>
+            <tr>
+                <ul>
+
+                    <td>
+                        <li> Agriculture</li>
+                    </td>
+                    <td>
+                        <li> DNA sequence classification</li>
+                    </td>
+                    <td>
+                        <li>Online advertising </li>
+                    </td>
+
+                </ul>
+            </tr>
+            <tr>
+                <ul>
+                    <td>
+                        <li>Anatomy</li>
+                    </td>
+                    <td>
+                        <li>User behavior analytics</li>
+                    </td>
+                    <td>
+                        <li>Adaptive website</li>
+                    </td>
+                </ul>
+            </tr>
+            <tr>
+                <ul>
+                    <td>
+                        <li>Financial market analysis</li>
+                    </td>
+                    <td>
+                        <li>Recommender systems</li>
+                    </td>
+                    <td>
+                        <li>Affective computing</li>
+                    </td>
+                </ul>
+            </tr>
+            <tr>
+                <ul>
+                    <td>
+                        <li>General game playing</li>
+                    </td>
+                    <td>
+                        <li>Robot locomotion</li>
+                    </td>
+                    <td>
+                        <li>Astronomy</li>
+                    </td>
+                </ul>
+            </tr>
+            <tr>
+                <ul>
+                    <td>
+                        <li>Handwriting recognition</li>
+                    </td>
+                    <td>
+                        <li>Search engines</li>
+                    </td>
+                    <td>
+                        <li>Automated decision-making</li>
+                    </td>
+                </ul>
+            </tr>
+            <tr>
+                <ul>
+                    <td>
+                        <li>Information retrieval</li>
+                    </td>
+                    <td>
+                        <li>Time-series forecasting</li>
+                    </td>
+                    <td>
+                        <li>Data quality</li>
+                    </td>
+                </ul>
+            </tr>
+            <tr>
+                <ul>
+                    <td>
+                        <li>Insurance</li>
+                    </td>
+                    <td>
+                        <li>Internet fraud</li>
+                    </td>
+                    <td>
+                        <li>Knowledge graph embedding</li>
+                    </td>
+                </ul>
+            </tr>
+            <tr>
+                <ul>
+                    <td>
+                        <li>Linguistics</li>
+                    </td>
+                    <td>
+                        <li>Structural health monitoring</li>
+                    </td>
+                    <td>
+                        <li>Marketing</li>
+                    </td>
+                </ul>
+            </tr>
+            <tr>
+                <ul>
+                    <td>
+                        <li>Theorem proving</li>
+                    </td>
+                    <td>
+                        <li>Natural language understanding</li>
+                    </td>
+                    <td>
+                        <li>Software engineering</li>
+                    </td>
+                </ul>
+            </tr>
+            <tr>
+                <ul>
+                    <td>
+                        <li>Machine translation</li>
+                    </td>
+                    <td>
+                        <li>Citizen Science </li>
+                    </td>
+                    <td>
+                        <li>Machine learning control</li>
+                    </td>
+                </ul>
+            </tr>
+
+        </table>
+        <hr size="3">
+    </section>
+
+    <section id="New concept in Machine Learning">
+        <h2>New concept in Machine Learning</h2>
+        <h3> Automated machine learning (AutoML)</h3>
+        <img src="images/mazur_michael.jpg" alt="Mazur Michael" align="right" height="150px" width="120px">
+        <p>Two promising aspects of <a
+                href="https://en.wikipedia.org/wiki/Automated_machine_learning#:~:text=Automated%20machine%20learning%20(AutoML)%20is,learning%20model%20ready%20for%20deployment." target="_blank">
+                automated machine learning</a> will be improved tools for labelling data and the automatic
+            tuning of neural net architectures, said Michael Mazur, CEO of software company AI Clearing, which uses AI
+            to
+            improve construction reporting.</p>
+        <ul>
+            <li>The need for labelled data created a labelling industry of human annotators based in low-cost countries
+                like
+                India, Central Eastern Europe and South America, Mazur said. The risks associated with using offshore
+                labor
+                "pushed the market to look at different ways of avoiding or minimizing this part of the process."
+                Improvements in semi- and self-supervised learning are helping companies keep the amount of manually
+                labelled data to a minimum.</li>
+            <br>
+            <li>By automating the work of selecting and tuning a neural network model, AI will become cheaper, and new
+                solutions will take less time to reach market.
+            </li>
+        </ul>
+        <hr size="3">
+    </section>
+
+    <section id="Ethics">
+        <h2>Ethics</h2>
+        <p>Machine learning poses a host of ethical questions. Systems that are trained on datasets collected with
+            biases
+            may exhibit these biases upon use (algorithmic bias), thus digitizing cultural prejudices. For example, in
+            1988, the UK's Commission for Racial Equality found that St. George's Medical School had been using a
+            computer
+            program trained from data of previous admissions staff and this program had denied nearly 60 candidates who
+            were
+            found to be either women or had non-European sounding names. Using job hiring data from a firm with racist
+            hiring policies may lead to a machine learning system duplicating the bias by scoring job applicants by
+            similarity to previous successful applicants. Responsible collection of data and documentation of
+            algorithmic rules used by a system thus is a critical part of machine learning.
+            <br>
+            AI can be well-equipped to make decisions in technical fields, which rely heavily on data and historical
+            information. These decisions rely on the objectivity and logical reasoning. Because human languages contain
+            biases, machines trained on language corpora will necessarily also learn these biases.
+            <br>
+            Other forms of ethical challenges, not related to personal biases, are seen in health care. There are
+            concerns
+            among health care professionals that these systems might not be designed in the public's interest but as
+            income-generating machines. This is especially true in the United States where there is a long-standing
+            ethical dilemma of improving health care, but also increase profits. For example, the algorithms could be
+            designed to provide patients with unnecessary tests or medication in which the algorithm's proprietary
+            owners
+            hold stakes. There is potential for machine learning in health care to provide professionals an additional
+            tool
+            to diagnose, medicate, and plan recovery paths for patients, but this requires these biases to be mitigated.
+        </p>
+        <hr size="3">
+    </section>
+
+    <section id="Limitations">
+        <h2>Limitations</h2>
+        <p>Although machine learning has been transformative in some fields, machine-learning programs often fail to
+            deliver
+            expected results. Reasons for this are numerous: lack of (suitable) data, lack of access to the
+            data, data bias, privacy problems, badly chosen tasks and algorithms, wrong tools and people, lack of
+            resources,
+            and evaluation problems.
+            <br>
+            In 2018, a self-driving car from Uber failed to detect a pedestrian, who was killed after a collision.
+            Attempts to use machine learning in healthcare with the IBM Watson system failed to deliver even after years
+            of
+            time and billions of dollars invested.
+            <br>
+            Machine learning has been used as a strategy to update the evidence related to a systematic review and
+            increased
+            reviewer burden related to the growth of biomedical literature. While it has improved with training sets, it
+            has
+            not yet developed sufficiently to reduce the workload burden without limiting the necessary sensitivity for
+            the
+            findings research themselves.
+        </p>
+        <ul>
+            <li> <b>Bais</b>
+                <p>Machine learning approaches in particular can suffer from different data biases. A machine learning
+                    system trained specifically on current customers may not be able to predict the needs of new
+                    customer
+                    groups that are not represented in the training data. When trained on human-made data, machine
+                    learning
+                    is likely to pick up the constitutional and unconscious biases already present in society. Language
+                    models learned from data have been shown to contain human-like biases. Machine learning
+                    systems used for criminal risk assessment have been found to be biased against black people.
+                    In 2015, Google photos would often tag black people as gorillas, and in 2018 this still was not
+                    well resolved, but Google reportedly was still using the workaround to remove all gorillas from the
+                    training data, and thus was not able to recognize real gorillas at all. Similar issues with
+                    recognizing non-white people have been found in many other systems. In 2016, Microsoft tested a
+                    chatbot that learned from Twitter, and it quickly picked up racist and sexist language. Because of
+                    such challenges, the effective use of machine learning may take longer to be adopted in other
+                    domains. Concern for fairness in machine learning, that is, reducing bias in machine learning and
+                    propelling its use for human good is increasingly expressed by artificial intelligence scientists,
+                    including Fei-Fei Li, who reminds engineers that "There's nothing artificial about AI...It's
+                    inspired by
+                    people, it's created by people, and—most importantly—it impacts people. It is a powerful tool we are
+                    only just beginning to understand, and that is a profound responsibility."</p>
+            </li>
+            <li> <b> Explainability</b>
+                <p>Explainable AI (XAI), or Interpretable AI, or Explainable Machine Learning (XML), is artificial
+                    intelligence (AI) in which humans can understand the decisions or predictions made by the AI. It
+                    contrasts with the "black box" concept in machine learning where even its designers cannot explain
+                    why
+                    an AI arrived at a specific decision. By refining the mental models of users of AI-powered systems
+                    and
+                    dismantling their misconceptions, XAI promises to help users perform more effectively. XAI may be an
+                    implementation of the social right to explanation.</p>
+
+            </li>
+            <li> <b> Overfitting</b>
+                <p>Settling on a bad, overly complex theory gerrymandered to fit all the past training data is known as
+                    overfitting. Many systems attempt to reduce overfitting by rewarding a theory in accordance with how
+                    well it fits the data but penalizing the theory</p>
+            </li>
+            <li> <b> Other limitations and vulnerabilities</b>
+                <p>Learners can also disappoint by "learning the wrong lesson". A toy example is that an image
+                    classifier
+                    trained only on pictures of brown horses and black cats might conclude that all brown patches are
+                    likely
+                    to be horses. A real-world example is that, unlike humans, current image classifiers often do not
+                    primarily make judgments from the spatial relationship between components of the picture, and they
+                    learn
+                    relationships between pixels that humans are oblivious to, but that still correlate with images of
+                    certain types of real objects. Modifying these patterns on a legitimate image can result in
+                    "adversarial" images that the system misclassifies.
+                    <br>
+                    Adversarial vulnerabilities can also result in nonlinear systems, or from non-pattern perturbations.
+                    Some systems are so brittle that changing a single adversarial pixel predictably induces
+                    misclassification.[citation needed] Machine learning models are often vulnerable to manipulation
+                    and/or
+                    evasion via adversarial machine learning.
+                    <br>
+                    Researchers have demonstrated how backdoors can be placed undetectably into classifying (e.g., for
+                    categories "spam" and well-visible "not spam" of posts) machine learning models which are often
+                    developed and/or trained by third parties. Parties can change the classification of any input,
+                    including
+                    in cases for which a type of data/software transparency is provided, possibly including white-box
+                    access.
+                </p>
+            </li>
+
+        </ul>
+        <hr size="3">
+    </section>
+
+</body>
+
+<footer>
+    <a href="#">
+        <h2>Back to Top</h2>
+    </a>
+</footer>
+
+</html>
